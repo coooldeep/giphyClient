@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <link href="https://cdn.quilljs.com/1.3.4/quill.snow.css" rel="stylesheet">
+      <script src="https://cdn.quilljs.com/1.3.4/quill.js"></script>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/custom.css">
+   </head>
+   <body>
+      <div class="container">
+         <h1 class="text-center"> Text Editor with GIPHY Client </h1>
+         <div id="toolbar">
+            <select class="ql-size">
+               <option value="small"></option>
+               <option selected></option>
+               <option value="large"></option>
+               <option value="huge"></option>
+            </select>
+            <button class="ql-bold"></button>
+            <button class="ql-italic"></button>
+            <button class="ql-button" data-toggle="modal" data-target="#myModal">
+            	<b>G</b>
+            </button>
+            <div class="modal fade" id="myModal">
+               <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <div class="form-inline">
+                           <input  id="search">
+                           <div type="button"   id="custom-button" onclick="getData()">Search</div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     </div>
+                     <div class="modal-body text-center" id="editor-img">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="editor"> </div>
+      </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/custom.js"></script>
+   </body>
+</html>
